@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
   <body>
+    <%- include("./partials/head.ejs") %> <%- include("./partials/navbar.ejs")
+    %>
     <h1>Add message</h1>
+    <form method="POST" action="/new">
+      <Label>username</Label>
+      <input type="text" name="messageUser" />
+
+      <!--  -->
+      <Label>Enter a message</Label>
+      <input type="text" name="messageText" />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
