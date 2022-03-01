@@ -33,5 +33,5 @@ app.post("/new", (req, res) => {
   });
   res.redirect("/");
 });
-
-app.listen(3000);
+const port = 3000;
+app.listen(process.env.PORT || port, () => console.log(`app on port ${port}`));
