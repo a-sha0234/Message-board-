@@ -3,14 +3,15 @@
   <body>
     <%- include("./partials/head.ejs") %> <%- include("./partials/navbar.ejs")
     %>
-    <h1>Add message</h1>
+    <h1 id="title">Add message</h1>
     <form method="POST" action="/new">
       <Label>username</Label>
       <input type="text" name="messageUser" />
 
       <!--  -->
       <Label>Enter a message</Label>
-      <input type="text" name="messageText" />
+      <!-- <input type="text" name="messageText" /> -->
+      <textarea type="text" name="messageText" rows="4" cols="50"> </textarea>
       <button type="submit">Submit</button>
     </form>
   </body>

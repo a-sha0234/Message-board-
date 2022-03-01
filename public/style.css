@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Hubballi", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 3px solid rebeccapurple;
+}
+
+a:visited {
+  color: #0071bc;
+}
+
+a:link {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  margin-right: 20px;
+  font-size: 1.7rem;
+}
+
+#title {
+  text-align: center;
+  margin-top: 100px;
+  color: #0071bc;
+}
+nav {
+  border-bottom: 2px solid black;
+}
+
+.message {
+  border: 2px solid lightblue;
+  margin: 10px;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+.message__text {
+  text-align: center;
+  color: #0071bc;
+  font-size: 1.4rem;
+}
+
+/* form styling starts */
+label,
+button {
+  display: block;
+  /* Reset */
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+form {
+  text-align: center;
+}
+
+form > * {
+  margin: 10px;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+textarea {
+  font-size: 1.2rem;
+}
+button {
+  margin: auto;
+  padding: 10px;
+  font-size: 1.2rem;
+}
